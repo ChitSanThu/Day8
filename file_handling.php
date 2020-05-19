@@ -2,6 +2,7 @@
 File Reading 
 File writing
 File Appending -->
+<!-- testing for git change -->
 <?php 
 // fread=>binary format 
 // file_get_contents=>string
