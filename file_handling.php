@@ -14,7 +14,7 @@ function fileRead($name){
         $handler=fopen($name,"r");
         return fread($handler,filesize($name));
     }else
-        return "not found 404 error";
+        exit("not found 404 error");
 }
 function readString($name){
     if(file_exists($name))
@@ -23,8 +23,16 @@ function readString($name){
         return "not found 404 error";
 }
 
+
+echo fileRead("fjad.txt");
+
+echo "something";
+echo "something";
+echo "something";
+
+
 // echo fileRead("my.txt");
-echo readString("data.txt");
+// echo readString("data.txt");
 
 // function writeFile($name,$str){
 
